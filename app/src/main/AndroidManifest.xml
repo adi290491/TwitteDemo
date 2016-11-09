@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.twitterdemo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="e585a92e5e80cb225a68a59beddd50a54a713445" />
+
+        <meta-data
+            android:name="android.app.searchable"
+            android:resource="@xml/searchable"
+            />
+
+        <activity android:name=".FunctionalityListActivity" />
+
+        <receiver
+            android:name=".MyResultReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.twitter.sdk.android.tweetcomposer.UPLOAD_SUCCESS" />
+                <action android:name="com.twitter.sdk.android.tweetcomposer.UPLOAD_FAILURE" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".UserTimelineActivity" />
+        <activity android:name=".FollowersActivity" />
+        <activity android:name=".SearchTweetsActivity" />
+        <activity android:name=".DirectMessageActivity" />
+        <activity android:name=".ChatBoxActivity" />
+        <activity android:name=".SearchActivity">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable"
+                />
+        </activity>
+    </application>
+
+</manifest>
