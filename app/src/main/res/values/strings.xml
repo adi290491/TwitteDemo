@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">Twitter Demo</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="signed_out">Signed Out</string>
+    <string name="desc_firebase_lockup">Firebase logo and name</string>
+    <string name="twitter_status_fmt">Twitter User: %s</string>
+    <string name="twitter_title_text">Twitter Login</string>
+    <string name="loading">Loading…</string>
+    <string name="firebase_status_fmt">Firebase User: %s</string>
+    <string name="firebase_user_management">Firebase User Management</string>
+    <string name="firebaseui_status_fmt">Firebase User: %s</string>
+    <string name="firebaseui_title_text">FirebaseUI Auth</string>
+    <string name="searching">Searching...</string>
+    <string name="followers_list">List of Followers</string>
+    <string name="direct_message">Direct Message Service</string>
+    <string name="search_a_tweet">Search A Tweet</string>
+    <string name="connectivity_error">Unable to connect to server</string>
+    <string name="check_connection">Please check your network connection.</string>
 </resources>

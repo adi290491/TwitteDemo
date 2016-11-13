@@ -40,11 +40,11 @@
             android:layout_weight="1"/>
 
         <Button
+            android:id="@+id/bt_send_message"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Send"
             android:background="@android:color/white"
-            android:onClick="sendMessage"
             />
     </LinearLayout>
 

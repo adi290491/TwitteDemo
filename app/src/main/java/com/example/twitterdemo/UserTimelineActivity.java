@@ -20,13 +20,16 @@ public class UserTimelineActivity extends ListActivity {
                 .screenName("aditya sawant")
                 .build();
 
-        final TweetTimelineListAdapter adapter = new TweetTimelineListAdapter.Builder(this)
-                .setTimeline(userTimeline)
-                .build();
+        if(Tools.isNetworkAvailable(this)) {
+            final TweetTimelineListAdapter adapter = new TweetTimelineListAdapter.Builder(this)
+                    .setTimeline(userTimeline)
+                    .build();
 
 
-        setListAdapter(adapter);
-
+            setListAdapter(adapter);
+        }else{
+            Tools.showToast(this, getString(R.string.connectivity_error));
+        }
 
     }
 }

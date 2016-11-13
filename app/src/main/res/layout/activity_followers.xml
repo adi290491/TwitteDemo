@@ -6,6 +6,9 @@
     android:orientation="vertical"
     tools:context="com.example.twitterdemo.FollowersActivity">
 
+    <include
+        layout="@layout/toolbar_default"/>
+
     <ListView
         android:id="@+id/lv_followers"
         android:layout_width="match_parent"

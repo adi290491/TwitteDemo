@@ -33,6 +33,19 @@
         />
 
     <TextView
+        android:id="@+id/tv_direct_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send/Receive Direct Messages"
+        android:minHeight="50dp"
+        android:textColor="@color/tw__composer_white"
+        android:background="@android:color/holo_green_dark"
+        android:textSize="20sp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        />
+
+    <TextView
         android:id="@+id/tv_search_tweets"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

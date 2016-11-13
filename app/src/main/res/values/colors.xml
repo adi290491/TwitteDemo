@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#039BE5</color>
+    <color name="colorPrimaryDark">#0288D1</color>
+    <color name="colorAccent">#FFA000</color>
+
+    <color name="grey_100">#F5F5F5</color>
+    <color name="grey_300">#E0E0E0</color>
+
+    <color name="list_separator_color">#e0e0e0</color>
+    <color name="list_separator_color_10">#10e0e0e0</color>
+    <color name="list_separator_color_20">#20e0e0e0</color>
+    <color name="list_separator_color_30">#30e0e0e0</color>
+    <color name="list_separator_color_40">#40e0e0e0</color>
+    <color name="list_separator_color_50">#50e0e0e0</color>
+    <color name="list_separator_color_60">#60e0e0e0</color>
+
+    <color name="list_pressed_color">#fafafa</color>
+    <color name="list_pressed_color_10">#10fafafa</color>
+    <color name="list_pressed_color_20">#20fafafa</color>
+    <color name="list_pressed_color_30">#30fafafa</color>
+    <color name="list_pressed_color_40">#40fafafa</color>
+    <color name="list_pressed_color_50">#50fafafa</color>
+    <color name="list_pressed_color_60">#60fafafa</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#ffababab</color>
+    <color name="gray_light4">#EBEBEB</color>
+    <color name="gray_light">#fff5f5f5</color>
+
 </resources>

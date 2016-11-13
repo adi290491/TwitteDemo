@@ -2,7 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:elevation="4dp">
+    android:elevation="4dp"
+    android:background="@color/colorPrimary"
+    >
 
 <android.support.v7.widget.Toolbar
     android:id="@+id/toolbar_actionbar"
@@ -21,10 +23,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:textColor="@color/white"
             android:ellipsize="end"
             android:gravity="center"
             android:maxLines="2"
-            android:text="Video Consultation"
+            android:text=""
             android:textSize="20dp" />
 
         <TextView
@@ -33,10 +36,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:textColor="@color/white"
             android:ellipsize="end"
             android:gravity="center"
             android:maxLines="2"
-            android:text="Video Consultation"
+            android:text=""
             />
 
     </LinearLayout>
