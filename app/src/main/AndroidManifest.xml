@@ -4,8 +4,8 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
 
     <application
         android:allowBackup="true"
@@ -13,7 +13,10 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TwitterLoginActivity">
+        <activity
+            android:name=".TwitterLoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,10 +30,12 @@
 
         <meta-data
             android:name="android.app.searchable"
-            android:resource="@xml/searchable"
-            />
+            android:resource="@xml/searchable" />
 
-        <activity android:name=".FunctionalityListActivity" />
+        <activity
+            android:name=".FunctionalityListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
 
         <receiver
             android:name=".MyResultReceiver"
@@ -42,16 +47,33 @@
             </intent-filter>
         </receiver>
 
-        <activity android:name=".UserTimelineActivity" />
-        <activity android:name=".FollowersActivity" />
-        <activity android:name=".SearchTweetsActivity" />
-        <activity android:name=".DirectMessageActivity" />
-        <activity android:name=".ChatBoxActivity" />
-        <activity android:name=".SearchActivity">
+        <activity
+            android:name=".UserTimelineActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".FollowersActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".SearchTweetsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".DirectMessageActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ChatBoxActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".SearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize">
             <meta-data
                 android:name="android.app.searchable"
-                android:resource="@xml/searchable"
-                />
+                android:resource="@xml/searchable" />
         </activity>
     </application>
 
